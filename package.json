@@ -100,7 +100,7 @@
     "supertest": "^7.2.2",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.2",
+    "typescript": "^7.0.2",
     "vitest": "^4.0.18"
   },
   "optionalDependencies": {
