@@ -17,7 +17,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -31,7 +31,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -56,7 +56,7 @@ jobs:
           - { name: "E2E", script: "test:e2e:coverage", node: 22, coverage: true, key: "e2e" }
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.tier.node }}
           cache: npm
@@ -261,7 +261,7 @@ jobs:
             }
 
       - name: Unit file coverage details
-        uses: davelosert/vitest-coverage-report-action@3c054a2d2e2ca45446417ad5d6d5eb33092af8f1 # v2.12.1
+        uses: davelosert/vitest-coverage-report-action@8b157684c6a6b259b97d45e72b44242865c0f6a5 # v2.12.2
         with:
           name: 'Unit'
           json-summary-path: coverage-artifacts/coverage-unit/coverage-summary.json
